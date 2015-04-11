@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Shipping Options</title>
+    <script type="text/javascript">
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+</head>
+<body>
+
+    <p>
+        Shipping options are as follows: UPS (1 day and 2 day shipping), USPS (Standard shipping and expedited), FedEX (Bulk orders only)
+        <script type="text/javascript">
+            document.write(getParameterByName('addrs'));
+        </script>
+    </p>
+
+</body>
+</html>

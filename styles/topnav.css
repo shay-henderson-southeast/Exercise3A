@@ -1,0 +1,78 @@
+﻿nav {
+    position: absolute;
+    top: 7.8em;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+#menu1 {
+    overflow: hidden; 
+    width: 8em; height: 3em; 
+    float: left;
+}
+#menu1:hover {
+    height: 21em;
+}
+#menu1 {
+    -webkit-transition: 200ms ease-in;
+    -moz-transition: 200ms ease-in;
+    -o-transition: 200ms ease-in;
+    -ms-transition: 200ms ease-in;
+    transition: 200ms ease-in;
+}
+#menu2 {
+    overflow: hidden; 
+    width: 8em; height: 3em; 
+    float: left;
+}
+#menu2:hover {
+    height: 21em;
+}
+#menu2 {
+    -webkit-transition: 200ms ease-in;
+    -moz-transition: 200ms ease-in;
+    -o-transition: 200ms ease-in;
+    -ms-transition: 200ms ease-in;
+    transition: 200ms ease-in;
+}
+ul.topnav {
+	list-style: none;
+	padding: 0 0.25em;	
+	margin: 0;
+	float: left;
+	background: #ACB0B9;
+	font-size: 1.2em;
+}
+ul.topnav li {
+    margin: 0;
+    position: relative; /*--Declare X and Y axis base--*/
+    list-style: none;
+}
+ul.topnav li span {
+    padding: .5em 1.5em .5em 1.5em;
+    color: #AE2929;
+    display: block;
+    text-decoration: none;
+    float: left;
+    list-style: none;
+}
+ul.topnav li a {
+    padding: .5em 1.5em .5em 1.5em;
+    color: #AE2929;
+    display: block;
+    text-decoration: none;
+    float: left;
+    list-style: none;
+}
+ul.topnav li a:hover{
+    background: #ACB0B9;
+    color: #AE2929;
+}
+ul.topnav li a {
+    -webkit-transition: 200ms linear;
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    -ms-transition: 200ms linear;
+    transition: 200ms linear;
+}

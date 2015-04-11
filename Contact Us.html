@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Valid Payment Options</title>
+    <script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    </script>
+</head>
+<body>
+    <section>
+        <article>
+            <h3>Contacting Us</h3>
+            <p>You an reach us in the following ways:</p>
+            <p>E-mail: ir2951vk@my.southeastmn.edu</p>
+            <p>Phone: 702-312-1234</p>
+            <p>Fax: 812-321-4567</p>
+            <script type="text/javascript">
+                document.write(getParameterByName('addrs'));
+            </script>
+        </article>
+    </section>
+</body>
+</html>
